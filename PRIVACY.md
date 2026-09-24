@@ -25,7 +25,7 @@ The following data is stored locally in the app:
 
 - Playlist metadata (name, URL, upload type, settings).
 - Channel and EPG / programme data downloaded from your provider.
-- Xtream / provider credentials (server URL, username, password). Credentials are encrypted using Android Keystore / EncryptedSharedPreferences.
+- Xtream / provider credentials (server URL, username, password). Credentials are encrypted with AES-256-GCM using a key held in the Android Keystore.
 - App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories).
 - TMDB artwork and metadata cache.
 - User profiles and profile-specific data.
@@ -103,7 +103,7 @@ Folgende Daten werden lokal in der App gespeichert:
 
 - Playlist-Metadaten (Name, URL, Upload-Typ, Einstellungen).
 - Sender- und EPG-/Programmdaten, die vom Anbieter heruntergeladen wurden.
-- Xtream-/Anbieter-Zugangsdaten (Server-URL, Benutzername, Passwort). Zugangsdaten werden mit Android Keystore / EncryptedSharedPreferences verschlüsselt.
+- Xtream-/Anbieter-Zugangsdaten (Server-URL, Benutzername, Passwort). Zugangsdaten werden mit AES-256-GCM und einem im Android Keystore gehaltenen Schlüssel verschlüsselt.
 - App-Einstellungen (Design, Sprache, UI-Einstellungen, Watchlist, Weiterschauen-Fortschritt, Suchverlauf, ausgeblendete Kategorien).
 - TMDB-Bilder- und Metadaten-Cache.
 - Nutzerprofile und profilspezifische Daten.
