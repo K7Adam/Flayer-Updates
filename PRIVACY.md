@@ -1,6 +1,6 @@
 # Flayer Privacy Policy
 
-**Last updated:** 2026-09-07
+**Last updated:** 2026-10-04
 
 This privacy policy applies to the Flayer Android app.
 
@@ -39,6 +39,7 @@ Your device may send data to third parties only as part of using the app:
 - **Your IPTV provider:** when you add an M3U URL or Xtream account, the app contacts your provider to download playlists, EPG and metadata. This includes the credentials and server address you entered.
 - **The Movie Database (TMDB):** the app sends programme / movie / series titles to `api.themoviedb.org` and `image.tmdb.org` to fetch artwork, cast, descriptions and recommendations.
 - **GitHub:** in the **self-hosted** build, the app contacts the public `K7Adam/Flayer-Updates` repository to check for signed update metadata and, if an update is available, to download the APK. The Play build does not contact GitHub.
+- **Google Cast (optional, phones and tablets only):** only after you turn on "Chromecast (beta)" in Settings. Google Play services then discover Cast devices on your network. When you cast, the stream address of the selected item (for Xtream providers this address contains your login), its title and artwork are sent to the Cast device you chose, which loads the stream directly from your provider. Other Cast-enabled apps on the same network can see what is playing. While Casting is on, Google's Cast library may send technical usage and diagnostic data to Google under Google's privacy policy. Casting is off by default.
 
 The app never shares your provider credentials with TMDB or GitHub.
 
@@ -54,6 +55,7 @@ The app requests the following permissions and explains why at runtime where req
 - `ACCESS_LOCAL_NETWORK` (Android 17+) — required for the TV web-setup server so a phone on the same network can add a playlist to the TV app.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — required so WorkManager can import or refresh playlists and sync EPG in the background.
 - `POST_NOTIFICATIONS` — required to show progress for background import / sync operations.
+- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — shows media controls in the notification and on the lock screen while a Cast session is running.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — required to add your in-progress and watchlisted content to the Android TV Home / Watch Next rows.
 
 ## Data retention and deletion
@@ -78,7 +80,7 @@ For privacy questions, contact the app owner at the address listed under "Contro
 
 ## Datenschutzerklärung
 
-**Letzte Aktualisierung:** 2026-09-07
+**Letzte Aktualisierung:** 2026-10-04
 
 Diese Datenschutzerklärung gilt für die Android-App Flayer.
 
@@ -117,6 +119,7 @@ Dein Gerät kann Daten nur in folgenden Fällen an Dritte senden:
 - **Dein IPTV-Anbieter:** Wenn du eine M3U-URL oder einen Xtream-Account hinzufügst, kontaktiert die App deinen Anbieter, um Playlists, EPG und Metadaten herunterzuladen. Dazu gehören die von dir eingegebenen Zugangsdaten und Serveradresse.
 - **The Movie Database (TMDB):** Die App sendet Programm-/Film-/Serientitel an `api.themoviedb.org` und `image.tmdb.org`, um Bilder, Besetzung, Beschreibungen und Empfehlungen abzurufen.
 - **GitHub:** In der **self-hosted** Version kontaktiert die App das öffentliche Repository `K7Adam/Flayer-Updates`, um signierte Update-Metadaten zu prüfen und gegebenenfalls das APK herunterzuladen. Die Play-Version kontaktiert kein GitHub.
+- **Google Cast (optional, nur Smartphones und Tablets):** Nur wenn du in den Einstellungen „Chromecast (Beta)“ einschaltest. Die Google Play-Dienste suchen dann Cast-Geräte in deinem Netzwerk. Beim Übertragen werden die Stream-Adresse des gewählten Inhalts (bei Xtream-Anbietern enthält diese Adresse deine Zugangsdaten), sein Titel und sein Bild an das ausgewählte Cast-Gerät gesendet, das den Stream direkt bei deinem Anbieter abruft. Andere Cast-fähige Apps im selben Netzwerk können sehen, was gerade läuft. Solange die Übertragung eingeschaltet ist, kann die Cast-Bibliothek von Google technische Nutzungs- und Diagnosedaten nach der Datenschutzerklärung von Google an Google senden. Die Übertragung ist standardmäßig ausgeschaltet.
 
 Die App teilt deine Anbieter-Zugangsdaten niemals mit TMDB oder GitHub.
 
@@ -132,6 +135,7 @@ Die App fordert folgende Berechtigungen an und erklärt diese bei Bedarf zur Lau
 - `ACCESS_LOCAL_NETWORK` (Android 17+) — erforderlich für den TV-Web-Einrichtungsserver, damit ein Telefon im selben Netzwerk eine Playlist zur TV-App hinzufügen kann.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — erforderlich, damit WorkManager Playlists im Hintergrund importieren / aktualisieren und EPG synchronisieren kann.
 - `POST_NOTIFICATIONS` — erforderlich, um Fortschrittsanzeigen für Hintergrund-Importe / -Synchronisationen anzuzeigen.
+- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — zeigt während einer Cast-Übertragung Wiedergabe-Steuerelemente in der Benachrichtigung und auf dem Sperrbildschirm.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — erforderlich, um deine laufenden und watchlisteten Inhalte in die Android-TV-Startseite / Watch-Next-Zeile hinzuzufügen.
 
 ## Datenaufbewahrung und Löschung
