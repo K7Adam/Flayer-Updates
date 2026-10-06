@@ -1,6 +1,6 @@
 # Flayer Privacy Policy
 
-**Last updated:** 2026-10-06
+**Last updated:** 2026-10-07
 
 This privacy policy applies to the Flayer Android app.
 
@@ -30,6 +30,8 @@ The following data is stored locally in the app:
 - App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories).
 - TMDB artwork and metadata cache.
 - User profiles and profile-specific data.
+- On phones and tablets, the titles you are currently watching also appear in the app's launcher shortcuts and in the "Continue watching" home-screen widget if you add it.
+- Diagnostics (Settings > Diagnostics): the reasons Android reports for recent app exits (for example a crash, a hang or a stop by the system for memory or CPU use, with the code locations of a hang), a crash summary limited to error types and code locations (no error messages), statistics of your last 20 playbacks (playback type, start time, buffering, dropped frames, video resolution, bitrate and codec, error code; no titles, channel names or addresses), basic device facts (model, Android version, memory, supported video decoders) and, on Android 16 and later, performance traces the system records when the app hangs or is stopped for excessive memory or CPU use. "Clear" there deletes everything the app stored; the exit history itself is kept by Android, and after "Clear" Flayer no longer shows the older entries.
 
 None of this data is sent to us.
 
@@ -41,6 +43,8 @@ Your device may send data to third parties only as part of using the app:
 - **The Movie Database (TMDB):** the app sends programme / movie / series titles to `api.themoviedb.org` and `image.tmdb.org` to fetch artwork, cast, descriptions and recommendations.
 - **GitHub:** in the **self-hosted** build, the app contacts the public `K7Adam/Flayer-Updates` repository to check for signed update metadata and, if an update is available, to download the APK. The Play build does not contact GitHub.
 - **Google Cast (optional, phones and tablets only):** only after you turn on "Chromecast (beta)" in Settings. Google Play services then discover Cast devices on your network. When you cast, the stream address of the selected item (for Xtream providers this address contains your login), its title and artwork are sent to the Cast device you chose, which loads the stream directly from your provider. Other Cast-enabled apps on the same network can see what is playing. While Casting is on, Google's Cast library may send technical usage and diagnostic data to Google under Google's privacy policy. Casting is off by default.
+
+- **A diagnostics report you choose to share:** only when you tap "Share report" in Settings > Diagnostics and pick an app (for example email) the report text goes to that app and to whoever you send it. Addresses, IP addresses, host names and login data are removed from it before it is shown or shared. System performance traces are never included.
 
 The app never shares your provider credentials with TMDB or GitHub.
 
