@@ -1,6 +1,6 @@
 # Flayer Privacy Policy
 
-**Last updated:** 2026-10-04
+**Last updated:** 2026-10-06
 
 This privacy policy applies to the Flayer Android app.
 
@@ -25,6 +25,7 @@ The following data is stored locally in the app:
 
 - Playlist metadata (name, URL, upload type, settings).
 - Channel and EPG / programme data downloaded from your provider.
+- Programme reminders you set (channel, programme title and time).
 - Xtream / provider credentials (server URL, username, password). Credentials are encrypted with AES-256-GCM using a key held in the Android Keystore.
 - App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories).
 - TMDB artwork and metadata cache.
@@ -54,7 +55,7 @@ The app requests the following permissions and explains why at runtime where req
 - `INTERNET` and `ACCESS_NETWORK_STATE` — required to fetch playlists, EPG and artwork.
 - `ACCESS_LOCAL_NETWORK` (Android 17+) — required for the TV web-setup server so a phone on the same network can add a playlist to the TV app.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — required so WorkManager can import or refresh playlists and sync EPG in the background.
-- `POST_NOTIFICATIONS` — required to show progress for background import / sync operations.
+- `POST_NOTIFICATIONS` — required to show progress for background import / sync operations and the programme reminders you set.
 - `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — shows media controls in the notification and on the lock screen while a Cast session is running.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — required to add your in-progress and watchlisted content to the Android TV Home / Watch Next rows.
 
@@ -80,7 +81,7 @@ For privacy questions, contact the app owner at the address listed under "Contro
 
 ## Datenschutzerklärung
 
-**Letzte Aktualisierung:** 2026-10-04
+**Letzte Aktualisierung:** 2026-10-06
 
 Diese Datenschutzerklärung gilt für die Android-App Flayer.
 
@@ -105,6 +106,7 @@ Folgende Daten werden lokal in der App gespeichert:
 
 - Playlist-Metadaten (Name, URL, Upload-Typ, Einstellungen).
 - Sender- und EPG-/Programmdaten, die vom Anbieter heruntergeladen wurden.
+- Von dir gesetzte Sendungserinnerungen (Sender, Sendungstitel und Uhrzeit).
 - Xtream-/Anbieter-Zugangsdaten (Server-URL, Benutzername, Passwort). Zugangsdaten werden mit AES-256-GCM und einem im Android Keystore gehaltenen Schlüssel verschlüsselt.
 - App-Einstellungen (Design, Sprache, UI-Einstellungen, Watchlist, Weiterschauen-Fortschritt, Suchverlauf, ausgeblendete Kategorien).
 - TMDB-Bilder- und Metadaten-Cache.
@@ -134,7 +136,7 @@ Die App fordert folgende Berechtigungen an und erklärt diese bei Bedarf zur Lau
 - `INTERNET` und `ACCESS_NETWORK_STATE` — erforderlich, um Playlists, EPG und Bilder abzurufen.
 - `ACCESS_LOCAL_NETWORK` (Android 17+) — erforderlich für den TV-Web-Einrichtungsserver, damit ein Telefon im selben Netzwerk eine Playlist zur TV-App hinzufügen kann.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — erforderlich, damit WorkManager Playlists im Hintergrund importieren / aktualisieren und EPG synchronisieren kann.
-- `POST_NOTIFICATIONS` — erforderlich, um Fortschrittsanzeigen für Hintergrund-Importe / -Synchronisationen anzuzeigen.
+- `POST_NOTIFICATIONS` — erforderlich, um Fortschrittsanzeigen für Hintergrund-Importe / -Synchronisationen und die von dir gesetzten Sendungserinnerungen anzuzeigen.
 - `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — zeigt während einer Cast-Übertragung Wiedergabe-Steuerelemente in der Benachrichtigung und auf dem Sperrbildschirm.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — erforderlich, um deine laufenden und watchlisteten Inhalte in die Android-TV-Startseite / Watch-Next-Zeile hinzuzufügen.
 
