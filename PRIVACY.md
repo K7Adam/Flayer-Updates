@@ -44,6 +44,8 @@ Your device may send data to third parties only as part of using the app:
 - **GitHub:** in the **self-hosted** build, the app contacts the public `K7Adam/Flayer-Updates` repository to check for signed update metadata and, if an update is available, to download the APK. The Play build does not contact GitHub.
 - **Google Cast (optional, phones and tablets only):** only after you turn on "Chromecast (beta)" in Settings. Google Play services then discover Cast devices on your network. When you cast, the stream address of the selected item (for Xtream providers this address contains your login), its title and artwork are sent to the Cast device you chose, which loads the stream directly from your provider. Other Cast-enabled apps on the same network can see what is playing. While Casting is on, Google's Cast library may send technical usage and diagnostic data to Google under Google's privacy policy. Casting is off by default.
 
+- **Experimental assistant access:** When enabled on a supported device, authorized Android assistants can request catalogue searches and playback actions using your active Flayer profile and playlist. Flayer shares only relevant titles, content types, local identifiers and action results. It does not share provider credentials, stream addresses, HTTP headers or your complete viewing history. The assistant may process your request and returned information using its own online services and privacy policy. Disabling access prevents new requests and invalidates pending Flayer assistant actions.
+
 - **A diagnostics report you choose to share:** only when you tap "Share report" in Settings > Diagnostics and pick an app (for example email) the report text goes to that app and to whoever you send it. Addresses, IP addresses, host names and login data are removed from it before it is shown or shared. System performance traces are never included.
 
 The app never shares your provider credentials with TMDB or GitHub.
@@ -85,7 +87,7 @@ For privacy questions, contact the app owner at the address listed under "Contro
 
 ## Datenschutzerklärung
 
-**Letzte Aktualisierung:** 2026-10-06
+**Letzte Aktualisierung:** 2026-10-07
 
 Diese Datenschutzerklärung gilt für die Android-App Flayer.
 
@@ -126,6 +128,8 @@ Dein Gerät kann Daten nur in folgenden Fällen an Dritte senden:
 - **The Movie Database (TMDB):** Die App sendet Programm-/Film-/Serientitel an `api.themoviedb.org` und `image.tmdb.org`, um Bilder, Besetzung, Beschreibungen und Empfehlungen abzurufen.
 - **GitHub:** In der **self-hosted** Version kontaktiert die App das öffentliche Repository `K7Adam/Flayer-Updates`, um signierte Update-Metadaten zu prüfen und gegebenenfalls das APK herunterzuladen. Die Play-Version kontaktiert kein GitHub.
 - **Google Cast (optional, nur Smartphones und Tablets):** Nur wenn du in den Einstellungen „Chromecast (Beta)“ einschaltest. Die Google Play-Dienste suchen dann Cast-Geräte in deinem Netzwerk. Beim Übertragen werden die Stream-Adresse des gewählten Inhalts (bei Xtream-Anbietern enthält diese Adresse deine Zugangsdaten), sein Titel und sein Bild an das ausgewählte Cast-Gerät gesendet, das den Stream direkt bei deinem Anbieter abruft. Andere Cast-fähige Apps im selben Netzwerk können sehen, was gerade läuft. Solange die Übertragung eingeschaltet ist, kann die Cast-Bibliothek von Google technische Nutzungs- und Diagnosedaten nach der Datenschutzerklärung von Google an Google senden. Die Übertragung ist standardmäßig ausgeschaltet.
+
+- **Experimenteller Assistentenzugriff:** Wenn du ihn auf einem unterstützten Gerät einschaltest, können autorisierte Android-Assistenten Katalogsuchen und Wiedergabeaktionen für dein aktives Flayer-Profil und deine Playlist anfordern. Flayer teilt nur relevante Titel, Inhaltstypen, lokale Kennungen und Aktionsergebnisse. Anbieter-Zugangsdaten, Stream-Adressen, HTTP-Header und dein vollständiger Wiedergabeverlauf werden nicht geteilt. Der Assistent kann deine Anfrage und die erhaltenen Informationen mit seinen eigenen Onlinediensten und nach seiner eigenen Datenschutzerklärung verarbeiten. Abschalten verhindert neue Anfragen und macht ausstehende Flayer-Assistentenaktionen ungültig.
 
 Die App teilt deine Anbieter-Zugangsdaten niemals mit TMDB oder GitHub.
 
