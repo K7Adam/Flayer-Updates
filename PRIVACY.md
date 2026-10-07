@@ -28,7 +28,7 @@ The following data is stored locally in the app:
 - Programme reminders you set (channel, programme title and time).
 - Xtream / provider credentials (server URL, username, password). Credentials are encrypted with AES-256-GCM using a key held in the Android Keystore.
 - App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories).
-- TMDB artwork and metadata cache.
+- TMDB artwork and metadata cache. TMDB database records expire after 150 days. After startup, the app also clears the shared memory/disk image cache when its persisted last-clear timestamp is unknown or older than 150 days. "Delete TMDB data" in Settings clears TMDB records and the shared image cache, including provider images. Images and metadata may be fetched again on demand.
 - User profiles and profile-specific data.
 - On phones and tablets, the titles you are currently watching also appear in the app's launcher shortcuts and in the "Continue watching" home-screen widget if you add it.
 - Diagnostics (Settings > Diagnostics): the reasons Android reports for recent app exits (for example a crash, a hang or a stop by the system for memory or CPU use, with the code locations of a hang), a crash summary limited to error types and code locations (no error messages), statistics of your last 20 playbacks (playback type, start time, buffering, dropped frames, video resolution, bitrate and codec, error code; no titles, channel names or addresses), basic device facts (model, Android version, memory, supported video decoders) and, on Android 16 and later, performance traces the system records when the app hangs or is stopped for excessive memory or CPU use. "Clear" there deletes everything the app stored; the exit history itself is kept by Android, and after "Clear" Flayer no longer shows the older entries.
@@ -115,7 +115,7 @@ Folgende Daten werden lokal in der App gespeichert:
 - Von dir gesetzte Sendungserinnerungen (Sender, Sendungstitel und Uhrzeit).
 - Xtream-/Anbieter-Zugangsdaten (Server-URL, Benutzername, Passwort). Zugangsdaten werden mit AES-256-GCM und einem im Android Keystore gehaltenen Schlüssel verschlüsselt.
 - App-Einstellungen (Design, Sprache, UI-Einstellungen, Watchlist, Weiterschauen-Fortschritt, Suchverlauf, ausgeblendete Kategorien).
-- TMDB-Bilder- und Metadaten-Cache.
+- TMDB-Bilder- und Metadaten-Cache. TMDB-Datenbankeinträge verfallen nach 150 Tagen. Nach dem Start leert die App auch den gemeinsamen Bilder-Cache im Arbeitsspeicher und auf dem Datenträger, wenn der gespeicherte Zeitpunkt der letzten Leerung unbekannt oder älter als 150 Tage ist. „TMDB-Daten löschen“ entfernt TMDB-Einträge und den gemeinsamen Bilder-Cache einschließlich Anbieterbildern. Bilder und Metadaten werden bei Bedarf erneut geladen.
 - Nutzerprofile und profilspezifische Daten.
 
 Keine dieser Daten werden an uns gesendet.
