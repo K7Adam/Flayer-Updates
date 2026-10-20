@@ -1,6 +1,6 @@
 # Flayer Privacy Policy
 
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-20
 
 This privacy policy applies to the Flayer Android app.
 
@@ -27,7 +27,7 @@ The following data is stored locally in the app:
 - Channel and EPG / programme data downloaded from your provider.
 - Programme reminders you set (channel, programme title and time).
 - Xtream / provider credentials (server URL, username, password). Credentials are encrypted with AES-256-GCM using a key held in the Android Keystore.
-- App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories).
+- App settings (theme, language, UI preferences, watchlist, continue-watching progress, search history, hidden categories, and the audio track you picked for a movie or episode).
 - TMDB artwork and metadata cache. TMDB database records expire after 150 days. After startup, the app also clears the shared memory/disk image cache when its persisted last-clear timestamp is unknown or older than 150 days. "Delete TMDB data" in Settings clears TMDB records and the shared image cache, including provider images. Images and metadata may be fetched again on demand.
 - User profiles and profile-specific data.
 - On phones and tablets, the titles you are currently watching also appear in the app's launcher shortcuts and in the "Continue watching" home-screen widget if you add it.
@@ -93,7 +93,7 @@ For privacy questions, contact the app owner at the address listed under "Contro
 
 ## Datenschutzerklärung
 
-**Letzte Aktualisierung:** 2026-10-19
+**Letzte Aktualisierung:** 2026-10-20
 
 Diese Datenschutzerklärung gilt für die Android-App Flayer.
 
@@ -120,7 +120,7 @@ Folgende Daten werden lokal in der App gespeichert:
 - Sender- und EPG-/Programmdaten, die vom Anbieter heruntergeladen wurden.
 - Von dir gesetzte Sendungserinnerungen (Sender, Sendungstitel und Uhrzeit).
 - Xtream-/Anbieter-Zugangsdaten (Server-URL, Benutzername, Passwort). Zugangsdaten werden mit AES-256-GCM und einem im Android Keystore gehaltenen Schlüssel verschlüsselt.
-- App-Einstellungen (Design, Sprache, UI-Einstellungen, Watchlist, Weiterschauen-Fortschritt, Suchverlauf, ausgeblendete Kategorien).
+- App-Einstellungen (Design, Sprache, UI-Einstellungen, Watchlist, Weiterschauen-Fortschritt, Suchverlauf, ausgeblendete Kategorien und die Tonspur, die du bei einem Film oder einer Folge gewählt hast).
 - TMDB-Bilder- und Metadaten-Cache. TMDB-Datenbankeinträge verfallen nach 150 Tagen. Nach dem Start leert die App auch den gemeinsamen Bilder-Cache im Arbeitsspeicher und auf dem Datenträger, wenn der gespeicherte Zeitpunkt der letzten Leerung unbekannt oder älter als 150 Tage ist. „TMDB-Daten löschen“ entfernt TMDB-Einträge und den gemeinsamen Bilder-Cache einschließlich Anbieterbildern. Bilder und Metadaten werden bei Bedarf erneut geladen.
 - Nutzerprofile und profilspezifische Daten.
 - Auf Smartphones und Tablets erscheinen die Titel, die du gerade schaust, außerdem in den App-Verknüpfungen des Launchers und im Startbildschirm-Widget „Weiterschauen“, falls du es hinzufügst.
