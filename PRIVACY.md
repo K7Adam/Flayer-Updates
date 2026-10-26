@@ -70,6 +70,7 @@ The app requests the following permissions and explains why at runtime where req
 - `POST_NOTIFICATIONS` — required to show progress for background import / sync operations and the programme reminders you set.
 - `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — on phones and tablets, keeps playback running in the background (Android 17 silences background audio without it) and shows media controls in the notification and on the lock screen, also while a Cast session is running. It sends no data anywhere.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — required to add your in-progress and watchlisted content to the Android TV Home / Watch Next rows.
+- `SYSTEM_ALERT_WINDOW` ("Display over other apps", only in the version from GitHub) — only if you allow it under **Settings > App update > Reopen after updates**: lets Flayer open again by itself after it installed its own update. Flayer never shows anything over other apps and sends no data.
 
 ## Data retention and deletion
 
@@ -161,6 +162,7 @@ Die App fordert folgende Berechtigungen an und erklärt diese bei Bedarf zur Lau
 - `POST_NOTIFICATIONS` — erforderlich, um Fortschrittsanzeigen für Hintergrund-Importe / -Synchronisationen und die von dir gesetzten Sendungserinnerungen anzuzeigen.
 - `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — hält auf Smartphones und Tablets die Wiedergabe im Hintergrund am Laufen (Android 17 schaltet Hintergrund-Audio ohne sie stumm) und zeigt Wiedergabe-Steuerelemente in der Benachrichtigung und auf dem Sperrbildschirm, auch während einer Cast-Übertragung. Dabei werden keine Daten gesendet.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — erforderlich, um deine laufenden und watchlisteten Inhalte in die Android-TV-Startseite / Watch-Next-Zeile hinzuzufügen.
+- `SYSTEM_ALERT_WINDOW` („Über anderen Apps einblenden“, nur in der Version von GitHub) — nur wenn du sie unter **Einstellungen > App-Update > Nach Updates wieder öffnen** erlaubst: Flayer öffnet sich damit nach der Installation eines eigenen Updates von selbst wieder. Flayer blendet nie etwas über anderen Apps ein und sendet dabei keine Daten.
 
 ## Datenaufbewahrung und Löschung
 
