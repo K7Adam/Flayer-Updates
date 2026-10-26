@@ -1,6 +1,6 @@
 # Flayer Privacy Policy
 
-**Last updated:** 2026-10-20
+**Last updated:** 2026-10-26
 
 This privacy policy applies to the Flayer Android app.
 
@@ -68,7 +68,7 @@ The app requests the following permissions and explains why at runtime where req
 - `WAKE_LOCK` — keeps the phone's Wi-Fi and processor awake while it passes a stream to a Cast device, also with the screen off.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — required so WorkManager can import or refresh playlists and sync EPG in the background.
 - `POST_NOTIFICATIONS` — required to show progress for background import / sync operations and the programme reminders you set.
-- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — shows media controls in the notification and on the lock screen while a Cast session is running.
+- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — on phones and tablets, keeps playback running in the background (Android 17 silences background audio without it) and shows media controls in the notification and on the lock screen, also while a Cast session is running. It sends no data anywhere.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — required to add your in-progress and watchlisted content to the Android TV Home / Watch Next rows.
 
 ## Data retention and deletion
@@ -93,7 +93,7 @@ For privacy questions, contact the app owner at the address listed under "Contro
 
 ## Datenschutzerklärung
 
-**Letzte Aktualisierung:** 2026-10-20
+**Letzte Aktualisierung:** 2026-10-26
 
 Diese Datenschutzerklärung gilt für die Android-App Flayer.
 
@@ -159,7 +159,7 @@ Die App fordert folgende Berechtigungen an und erklärt diese bei Bedarf zur Lau
 - `WAKE_LOCK` — hält WLAN und Prozessor des Telefons wach, während es einen Stream an ein Cast-Gerät weiterreicht, auch bei ausgeschaltetem Bildschirm.
 - `FOREGROUND_SERVICE` / `FOREGROUND_SERVICE_DATA_SYNC` — erforderlich, damit WorkManager Playlists im Hintergrund importieren / aktualisieren und EPG synchronisieren kann.
 - `POST_NOTIFICATIONS` — erforderlich, um Fortschrittsanzeigen für Hintergrund-Importe / -Synchronisationen und die von dir gesetzten Sendungserinnerungen anzuzeigen.
-- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — zeigt während einer Cast-Übertragung Wiedergabe-Steuerelemente in der Benachrichtigung und auf dem Sperrbildschirm.
+- `FOREGROUND_SERVICE_MEDIA_PLAYBACK` — hält auf Smartphones und Tablets die Wiedergabe im Hintergrund am Laufen (Android 17 schaltet Hintergrund-Audio ohne sie stumm) und zeigt Wiedergabe-Steuerelemente in der Benachrichtigung und auf dem Sperrbildschirm, auch während einer Cast-Übertragung. Dabei werden keine Daten gesendet.
 - `READ_EPG_DATA` / `WRITE_EPG_DATA` — erforderlich, um deine laufenden und watchlisteten Inhalte in die Android-TV-Startseite / Watch-Next-Zeile hinzuzufügen.
 
 ## Datenaufbewahrung und Löschung
